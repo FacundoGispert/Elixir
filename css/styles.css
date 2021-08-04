@@ -1,0 +1,57 @@
+
+
+p {
+font-family: 'Anonymous Pro', monospace;
+}
+
+  h1, h2, h3 {
+    font-family: 'League Gothic', arial;
+  }
+
+  .bg-header {
+    background-image: url("/img/1.png") !important;
+    text-shadow: 2px 2px 10px black;
+  }
+
+  .bg-nav {
+    background-image: url("/img/TEXTURA.png") !important;
+  }
+
+  .text-naranja {
+    color: #ffbd59!important;
+    
+  }
+
+  .anonPro {
+    font-family: 'Anonymous Pro', monospace;
+  }
+
+  .buttons {
+    background-color: #ffbd59;
+    border-color: #ffbd59;
+  }
+
+  label{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 16px;
+  }
+  select {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+  }
+
+  .list-group {
+    margin-top: 50px;
+  }
+
+  #filtrando{
+    padding-left: 0;
+  }
+
+  .filtracion{
+    margin-top: 15px;
+  }
+
+  .card-footer{
+    display: flex
+  }

@@ -1,0 +1,22 @@
+input[type=number]{
+
+    text-align: right;
+    font-size: large;
+    width: 35px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+    margin-top: 3px;
+}
+    .circulo {
+        width: 1200px;
+        height: 120px;
+        font-size: small;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        right: 11px;
+        bottom: 14px;
+        color: white;
+   }

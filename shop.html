@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Elixir Vinoteca</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap" rel="stylesheet">
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/tienda.css">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: white;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-nav anonPro">
+    <div class="container">
+      <a href="shop.html">
+        <img src="img/logoElixir2.png" width="100rem" href="#"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Club del Vino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promociones</a>
+          </li>
+          <li>
+            <a href="cart.html"><img style="height: 40px; width: 40px;" src="img/cart-icon-28351 (1).png" alt=""></a><span class="circulo"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container" >
+
+    <div class="row" >
+
+      <div class="col-lg-3" id="filtrando">
+        <div class="list-group">
+          <form action="shop.html" method="get" id="formFilter">
+          <div class="filtracion">
+          <label for="state_id" class="control-label"><strong>Categoría</strong></label>
+          <select class="form-control" id="state_id" name="categoria" >
+            <option value="">--------</option>
+          </select>
+        </div>
+        <div class="filtracion">
+          <label for="state_id1" class="control-label"><strong>Bodega</strong></label>
+          <select class="form-control" id="state_id1" name="bodega">
+            <option value="">--------</option>
+          </select>
+        </div>
+        <div class="filtracion">
+          <label for="state_id3" class="control-label"><strong>Varietal</strong></label>
+          <select class="form-control" id="state_id3" name="varietal">
+            <option value="">--------</option>
+          </select>
+        </div>
+        <div class="filtracion">
+          <label for="state_id2" class="control-label"><strong>Precio</strong></label>
+          <select class="form-control" id="state_id2" name="precio">
+            <option value="">--------</option>
+            <option value="ASC" id="ASC">De menor a mayor</option>
+            <option value="DESC"id="DESC">De mayor a menor</option>
+          </select>
+        </div>
+          <br>
+          <input type="submit" id="botonFiltro" value="FILTRAR" class="btn btn-primary btn-block">
+        </form>
+          
+
+          <!-- <a href="shop.html?categoria=1" class="list-group-item">Category 1</a>
+          <a href="shop.html?bodega=1" class="list-group-item">Category 2</a>
+          <a href="shop.html?precio=ASC" class="list-group-item">Category 3</a> -->
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="img/Que-es-un-vino-redondo.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="img/Vino-dulces-tentacion.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="img/Vino-equilibrado-1.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="row" id="itemsContainer">
+
+          <!-- Tabla creada dinamicamente -->
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+      <ul class="pagination justify-content-end" id="listaPag">
+
+      </ul>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark bg-nav">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Elixir Vinoteca 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/datos.js" type="module"></script>
+  <script src="js/showvinos.js" type="module"></script>
+</body>
+
+</html>
